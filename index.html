@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Addiction Survey</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+      <!-- Navbar -->
+  <header>
+    <img class="logo" src="logo.svg" alt="logo">
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">Other Surveys</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <a class="cta" href="#"><button>Contact</button></a>
+  </header>
+      <!-- Headers + Image -->
+  <div class="container">
+    <h1 id = "main-header">Addiction Survey</h1>
+
+    <img id="image" src="https://hbr.org/resources/images/article_assets/2020/01/Jan20_15_650038687..jpg" alt="Depression">
+
+    <h2 id = "sub-header">Please answer the following questions to determine if you are addicted (alcohol, drugs, etc.) </h2>
+
+    <h3 id = "micro-header">**This is no way a medical diagnosis for addiction. Please consult your medical practitioner if you need further guidance.**</h3>
+  </div>
+
+      <!-- Survey Form -->
+  <div class="container-2">
+    <form id = "survey">
+      <div class="line-break1">
+        <label for="age">Age:
+          <input type="number" placeholder="10" min="10" max="130" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="3"required>
+          </label>
+      </div>
+      <!-- QUESTION? -->
+      <div class="line-break">
+        <label for="question">Sample Question - YES/NO
+          <input type="radio" id="yes" name="yes/no" value="yes" required>
+          <label for="yes">Yes</label>
+          <input type="radio" id="no" name="yes/no" value="no" required>
+          <label for="no">No</label>
+            </label>
+      </div>
+      <!-- QUESTION? -->
+      <div class="line-break">
+        <label for="question">Sample Question - Min/Max Textbox
+          <input type="number" id="number" placeholder="0" min="0" max="7" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="1" required>
+        </label>
+      </div>
+      <!-- QUESTION? -->
+      <div class="line-break">
+        <label for="question">Sample Question - Radiobuttons - Reason for Addiction
+          <input type="radio" id="girl/boy" name="girl-boy/school/other" value="girl/boy" required>
+          <label for="girl/boy">Over a girl/boy, I'm addicted over somebody.</label>
+          <input type="radio" id="school" name="girl-boy/school/other" value="school" required>
+          <label for="school">Over school/work, I'm addicted over school/work.</label>
+          <input type="radio" id="other" name="girl-boy/school/other" value="other" required>
+          <label for="other">Over something else.</label>
+        </label>
+      </div>
+      <!-- QUESTION? -->
+      <div class="line-break">
+        <label for="question">Sample Question - Name
+          <input type="text" id="name" placeholder="John/Jane Doe" required>
+        </label>
+      </div>
+      <!-- QUESTION -- INSERT JS TO ADD NAME -->
+      <div class="line-break">
+        <label for="question">${name} what is the root cause of the addiction?
+          <input type="text" id="why" placeholder="" required>
+        </label>
+      </div>
+      <!-- QUESTION? -->
+      <div class="line-break">
+        <label for="question">Final Sample Question to Determine Accuracy <div>*Note* Results may be inaccurate if the answers are untruthfully answered.</div>
+          <input type="radio" id="yes1" name="truth" value="yes" required>
+          <label for="yes1">Yes, I have been 100% honest.</label>
+          <input type="radio" id="no1" name="truth" value="no" required>
+          <label for="no1">No, I have been untruthful on some of my answers.</label>
+        </label>
+      </div>
+    </form>
+    <!-- Submit Btn + Referral to NHS Site -->
+    <div class="line-break2">
+      <a href="https://www.nhs.us/" id="submit" target="_blank">Submit</a>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
+
